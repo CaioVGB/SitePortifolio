@@ -1,0 +1,163 @@
+
+
+/*
+Margin corresponde a margem externa em relação ao elemento
+padding corresponde a "margem" interna em relaçãoao elemento
+background corresponde ao fundo, no qual é possivel colocar uma cor sólida única
+ou em gradiente
+
+box sizing: content box não é uma boa prática, pois
+ao aumentarmos uma imagem, por exemplo, ou qualquer outro
+elemento, o que ocorre é que a CAIXA DE CONTEÚDO (em que
+o elemento está) aumenta e não ele em si, causando possiveis
+distorções. O ideial é utilizar box-sizing:border-box
+
+
+Utilizar o site: https://cssgradiente.io/
+*/
+* { 
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+    
+}
+
+
+#txtmenu {
+display: flex;
+list-style: none;
+padding: 20px;
+justify-content: center;
+}
+
+#txtmenu a 
+{
+    color: white; /* Aplicar uma cor a fonte*/
+    font-family: 'Ysabeau SC', sans-serif; /* Aplicar uma fonte */
+    font-size: 17px; /* Aumentar o tamanho da fonte */
+    text-decoration: none; /* Tirar o sublinhado do link */
+    flex-direction: row; /* Alinhar um ao lado do outro */
+    margin: 6px; /* Atribuir uma margin a cada item */
+}
+
+/* Ao passar o mouse */
+#txtmenu:hover {
+    color: rgba(200,8,8,1);
+}
+
+header {
+
+    background:  linear-gradient(90deg, rgba(92,24,61,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+
+}
+
+.apresentacao {
+    display: flex;
+}
+
+h1 {
+    font-size: 23px;
+    color: white;
+    font-family: 'Ysabeau SC', sans-serif;
+    line-height: 170%;
+}
+
+.right h2 {
+    font-size: 18px;
+    color: white;
+    font-family: 'Ysabeau SC', sans-serif;
+
+}
+
+.right {
+    flex: 5;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: left;
+}
+
+.left {
+    flex: 5;
+}
+
+.btn {
+    border: 2px;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'Ysabeau SC', sans-serif;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+.btncontact {
+    background:rgb(0, 0, 0);
+    color: white;
+    margin-top: 20px;
+}
+
+.btncontact:hover {
+    background:rgb(255, 255, 255);
+    color: rgb(0, 0, 0); 
+}
+
+span {
+    font-size: 18px;
+    color: white;
+    font-family: 'Ysabeau SC', sans-serif;
+
+}
+
+
+
+.containerServicos {
+    background: black;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.containerServicos h2 {
+    color: white;
+}
+
+.itemServico1, .itemServico3, .itemServico6, .itemServico8 {
+    border: 1px solid purple;
+    border-radius: 5px;
+    margin: 15px;
+    padding: 40px 20px;
+    text-align: center;
+    width: 20%;
+    font-size: 14px;
+    font-family: 'Ysabeau SC', sans-serif;
+}
+
+.itemServico2, .itemServico4, .itemServico5, .itemServico7 {
+    border: 1px solid rgb(0, 2, 128);
+    border-radius: 5px;
+    margin: 15px;
+    padding: 40px 20px;
+    text-align: center;
+    width: 20%;
+    font-size: 14px;
+    font-family: 'Ysabeau SC', sans-serif;
+}
+
+.containerServicos img{
+    width: 60px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Ysabeau SC', sans-serif;
+    background: black;
+    padding-top: 30px;
+    padding-bottom: 5px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
